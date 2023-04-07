@@ -1,10 +1,11 @@
 /****************
 更新时间：2023-4-07
 版本：12.1
+使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
 [rewrite_local]
-^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/wanghao6736/QuanX/master/JS/Crack/NotabilityPlus.js
+^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/Notability
 [mitm] 
-hostname = notability.com
+hostname=notability.com
 ****************/
 
 var body = JSON["parse"]($response["body"]);
