@@ -3,7 +3,7 @@
 版本：12.1
 使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
 [rewrite_local]
-^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/Notability
+^https?:\/\/notability\.com\/subscriptions url script-response-body https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/Notability.js
 [mitm] 
 hostname=notability.com
 ****************/
