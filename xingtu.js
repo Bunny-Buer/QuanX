@@ -3,7 +3,7 @@
 版本：xxx
 使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
 [rewrite_local]
-https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/commerce.js
+https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info) url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/xingtu.js
 [mitm] 
 hostname=commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
 ****************/
