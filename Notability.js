@@ -20,7 +20,7 @@ body = {
         status: "active",
         originalPurchaseDate: "2022-10-31T23:35:29.000Z",
         originalTransactionId: "300001262346134",
-        expirationDate: "2100-12-20T00:00:00.000Z",
+        expirationDate: "2099-12-20T00:00:00.000Z",
         productId: "com.gingerlabs.Notability.premium_subscription",
         tier: "premium",
         refundedDate: null,
