@@ -1,3 +1,13 @@
+/****************
+更新时间：2023-4-17
+软件版本：9.8.50
+使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
+[rewrite_local]
+^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/.+\/(h\d/vip|vip\/prompt|vip|user)\/(.*?) url script-response-body https://raw.githubusercontent.com/donglovexiao/Script/main/MeiTuXiuXiu.js
+[MITM]
+hostname: *.xiuxiu.meitu.com
+****************/
+
 var chxm1023 = JSON.parse($response.body);
 const hysj = '/vip/prompt';
 const hyxx = '/vip/vip_show';
