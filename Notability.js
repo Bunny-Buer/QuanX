@@ -18,7 +18,7 @@ body = {
       subscription: {
         __typename: "AppStoreSubscription",
         status: "active",
-        originalPurchaseDate: "2022-10-31T23:35:29.000Z",
+        originalPurchaseDate: "2022-12-11T23:35:29.000Z",
         originalTransactionId: "300001262346134",
         expirationDate: "2099-12-20T00:00:00.000Z",
         productId: "com.gingerlabs.Notability.premium_subscription",
