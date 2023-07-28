@@ -3,7 +3,7 @@
 软件版本：
 使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
 [rewrite_local]
-^https:\/\/www\.xmind\.app\/\_res\/devices url script-response-body https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/VSCO.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/Bunny-Buer/QuanX/Script/VSCO.js
 [mitm] 
 hostname = api.revenuecat.com
 ****************/
