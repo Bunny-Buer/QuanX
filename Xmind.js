@@ -7,7 +7,7 @@
 [mitm] 
 hostname = www.xmind.*
 ****************/
-chxm1023 = {
+BUER = {
   "license" : {
     "status" : "sub",
     "expireTime" : 4102415999000
@@ -16,4 +16,4 @@ chxm1023 = {
   "raw_data" : "bKnTeMMu/TJ86ZFoUqG+sfKC1nitD8b/NaUT93UBc0woo0BF5uBVYXsHUQJkQxLHGlZCbdnKaKzZ4iljM9xddkyMycpUbAtDoywnr4RNzxqXY20pDM0Bdgm+HssaS1RworH8aaaf0IYnnGplxIuqMyT9107PrenF0MBUIaKU9Cw="
 };
 
-$done({body : JSON.stringify(chxm1023)});
+$done({body : JSON.stringify(BUER)});
