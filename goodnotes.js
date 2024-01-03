@@ -3,32 +3,43 @@
 软件版本：
 使用说明：此脚本仅供学习，请勿传播，因个人传播可能造成后果的概不负责
 [rewrite_local]
-^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://github.com/ddgksf2013/MoYu/raw/master/GoodNotesProCrack.js
-^https:\/\/isi\.csan\.goodnotes\.com\/.+\/subscribers\/[^/]+/(offerings|attributes)$ url request-header (\r\n)X-RevenueCat-ETag:.+(\r\n) request-header $1X-RevenueCat-ETag:$2
+^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/Reviewa/Review/main/Goodnotes6.js
+^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/Reviewa/Review/main/Goodnotes6.js
 [mitm] 
 hostname=isi.csan.goodnotes.com
 ******************************************************************/
-const body = {};
-const obj = JSON.parse((typeof $response !== "undefined" && $response.body) || null);
-const gn6 = "com.goodnotes.gn6_one_time_unlock_3999";
-const modData = { purchase_date: "2022-09-01T09:12:34Z" };
+const chxm1023 = {};
+const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
-if (typeof $response === "undefined") {
+const namea = "apple_access";
+const nameb = "crossplatform_access";
+const jsid = "com.goodnotes.gn6_one_time_unlock_3999";
+
+  
+if (typeof $response == "undefined") {
   delete $request.headers["x-revenuecat-etag"];
   delete $request.headers["X-RevenueCat-ETag"];
-  body.headers = $request.headers;
-} else if (obj && obj.subscriber) {
-  obj.subscriber.subscriptions[gn6] = {
-    original_purchase_date: "2022-09-01T09:12:34Z",
-    purchase_date: "2022-09-01T09:12:34Z",
-    store: "app_store",
-    ownership_type: "PURCHASED"
-  };
-  obj.subscriber.entitlements["apple_access"] = modData;
-  obj.subscriber.entitlements["apple_access"].product_identifier = gn6;
-  obj.subscriber.entitlements["crossplatform_access"] = modData;
-  obj.subscriber.entitlements["crossplatform_access"].product_identifier = gn6;
-  body.body = JSON.stringify(obj);
+  chxm1023.headers = $request.headers;
+} else if (chxm1024 && chxm1024.subscriber) {
+  data = {
+ "Author": "chxm1023",
+ "Telegram" : "https://t.me/chxm1023",
+ "warning": "仅供学习，禁止转载或售卖",
+ "purchase_date": "2022-09-09T09:09:09Z"
+ };
+  chxm1024.subscriber.subscriptions[(jsid)] = {
+ "Author": "chxm1023",
+ "Telegram" : "https://t.me/chxm1023",
+ "warning": "仅供学习，禁止转载或售卖",
+ "original_purchase_date": "2022-09-09T09:09:09Z",
+ "purchase_date": "2022-09-09T09:09:09Z",
+ "store" : "app_store",
+ "ownership_type": "PURCHASED"
+ };
+  chxm1024.subscriber.entitlements[(namea)] = JSON.parse(JSON.stringify(data));
+  chxm1024.subscriber.entitlements[(nameb)] = JSON.parse(JSON.stringify(data));
+  chxm1024.subscriber.entitlements[(namea)].product_identifier = (jsid);
+    chxm1024.subscriber.entitlements[(nameb)].product_identifier = (jsid);
+  chxm1023.body = JSON.stringify(chxm1024);
 }
-
-$done(body);
+$done(chxm1023);
